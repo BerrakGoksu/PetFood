@@ -9,6 +9,6 @@ namespace ApplicationCore.Entities
     public class Basket : BaseEntity
     {
         public string BuyerId { get; set; }
-        private List<BasketItem> Items { get; set; }
+        public List<BasketItem> Items { get; set; }
     }
 }

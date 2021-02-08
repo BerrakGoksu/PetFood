@@ -11,7 +11,10 @@ namespace Infrastructure.Data
 {
     public class PetFoodContext : DbContext
     {
-        //public PetFoodContext(DbContextOptions)
+        public PetFoodContext(DbContextOptions<PetFoodContext> options) : base(options)
+        {
+
+        }
 
         public DbSet<Category> Categories { get; set; }
         public DbSet<Brand> Brands { get; set; }
